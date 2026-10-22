@@ -514,20 +514,6 @@ body.scrolled .topbar {
   opacity: 0.75;
 }
 
-/* ── 6. good to know ── */
-.know {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1px;
-  background: var(--line);
-  border: 1px solid var(--line);
-  border-radius: 20px;
-  overflow: hidden;
-}
-.know > div { background: var(--soil-2); padding: 1.5rem; }
-.know dt { font-weight: 600; margin-bottom: 0.4rem; }
-.know dd { color: var(--stage-dim); font-size: 0.95rem; line-height: 1.6; }
-
 /* ── 7. ways in ── */
 .ways { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
 .way {
@@ -565,39 +551,17 @@ body.scrolled .topbar {
 /* ── 9. build ── */
 .chapter-build { border-top: 1px solid var(--line); }
 .chapter-build .chapter-copy { margin-bottom: 2.5rem; }
-.chapter-build a { color: var(--thread); }
-.build-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 2rem; align-items: start; }
-.caps {
-  list-style: none;
-  border: 1px solid var(--line);
-  border-radius: 20px;
-  background: rgba(3, 9, 12, 0.6);
-  font-family: var(--mono);
-  overflow: hidden;
-}
-.caps li {
-  display: grid; grid-template-columns: 7.5rem 1fr; gap: 1rem;
-  padding: 1rem 1.3rem;
-  border-bottom: 1px solid var(--line);
-  font-size: 0.85rem;
-}
-.caps li:last-child { border-bottom: 0; }
-.caps b { color: var(--myc-bright); font-weight: 500; }
-.caps span { color: var(--stage-dim); font-family: var(--font); font-size: 0.92rem; }
-.build-notes h3 { margin-top: 1.4rem; }
-.build-notes h3:first-child { margin-top: 0; }
-.build-notes p { color: var(--stage-dim); font-size: 0.95rem; line-height: 1.6; }
-.build-notes strong { color: var(--stage-fg); font-weight: 600; }
-.build-links { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.6rem; }
+.build-links { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 2rem; }
 .chapter-build .btn-ghost {
-  padding: 0.55rem 1rem;
+  padding: 0.6rem 1.1rem;
   border-radius: 999px;
   border: 1px solid var(--line);
   color: var(--stage-fg);
-  text-decoration: none; font-size: 0.88rem;
+  text-decoration: none; font-size: 0.9rem;
   transition: border-color 0.2s, background 0.2s;
 }
 .chapter-build .btn-ghost:hover { border-color: var(--thread); background: rgba(125, 211, 200, 0.08); }
+.chapter-build .btn-ghost-lead { border-color: var(--thread); color: var(--myc-bright); }
 
 /* ── 10. get it ── */
 .chapter-end { text-align: center; display: flex; flex-direction: column; align-items: center; }
@@ -637,15 +601,13 @@ body.scrolled .topbar {
   .wordmark { font-size: clamp(3.4rem, 16vw, 5rem); }
 
   .chapter-play, .chapter-feel, .chapter-how { grid-template-columns: 1fr; }
-  .know { grid-template-columns: 1fr; }
   .chapter-feel .feel-devices { order: 2; }
-  .perks, .ways, .offline-table, .build-grid { grid-template-columns: 1fr; }
+  .perks, .ways, .offline-table { grid-template-columns: 1fr; }
   .feel-devices .device { width: min(70%, 240px); }
 }
 
 @media (max-width: 560px) {
   .topnav a:not(.topnav-get) { display: none; }
   .get-buttons > a { flex: 1 1 100%; }
-  .caps li { grid-template-columns: 1fr; gap: 0.25rem; }
   .scroll-cue { display: none; }
 }

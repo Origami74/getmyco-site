@@ -4,16 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Myco — your portal to the mesh</title>
-<meta name="description" content="Get apps from the people around you. Bump phones, and the app is yours too — and it keeps working with no internet. Free for Android.">
+<meta name="description" content="Get apps from the people around you. Tap phones, and the app is yours too — and it keeps working with no internet. Free for Android.">
 <meta name="theme-color" content="#060a12">
 <link rel="canonical" href="https://getmyco.app/">
-<link rel="icon" type="image/png" href="/favicon.png">
-<link rel="apple-touch-icon" href="/img/icon-256.png">
+<link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" type="image/png" href="/favicon.png" sizes="64x64">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://getmyco.app/">
 <meta property="og:title" content="Myco — your portal to the mesh">
-<meta property="og:description" content="Get apps from the people around you. Bump phones, and it keeps working with no internet.">
+<meta property="og:description" content="Get apps from the people around you. Tap phones, and it keeps working with no internet.">
 <meta property="og:image" content="https://getmyco.app/img/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -58,7 +59,7 @@
     <p class="tagline">Your portal to the mesh.</p>
 
     <p class="blurb">
-      Get apps from the people around you. Hold your phones together and
+      Get apps from the people around you. Tap your phones together and
       the app is yours too — and it keeps working when there's no internet.
     </p>
 
@@ -85,6 +86,10 @@
           <li>If your phone asks, allow your browser to install apps. It's a one-time switch.</li>
           <li>Tap <em>Install</em>, then <em>Open</em>.</li>
         </ol>
+        <p>On first start Myco asks for Bluetooth, nearby devices and a
+          VPN. The VPN stays on your phone — it's how Myco talks to other
+          phones, not a route for your internet traffic. Keep Myco open on
+          screen while you share; that's when phones can find each other.</p>
       </details>
       <p class="not-android" hidden>
         You're on a computer. Open <strong>getmyco.app</strong> on your Android phone to install.
@@ -176,29 +181,52 @@
     </div>
   </div>
 
-  <a class="scroll-cue" href="#play" aria-label="Scroll to learn more">
+  <a class="scroll-cue" href="#how" aria-label="Scroll to learn more">
     <span>See what it does</span>
     <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="m6 9 6 6 6-6"/></svg>
   </a>
 </section>
 
-<!-- ══ 1. PLAY ════════════════════════════════════════════════════ -->
+<!-- ══ 1. HOW IT WORKS ════════════════════════════════════════════
+     One tap does both: it connects the two phones AND hands the app
+     over. Don't split it into steps. -->
+<section class="chapter chapter-how" id="how">
+  <figure class="how-photo reveal">
+    <img src="/img/share-bump.jpg" alt="Two phones held back to back. One shows “Sharing Bitchat — hold the backs together, no scan needed”" width="768" height="1376" loading="lazy">
+  </figure>
+  <div class="chapter-copy reveal">
+    <p class="kicker">How it works</p>
+    <h2>One tap.<br>The app is yours.</h2>
+    <p class="lede">
+      Your friend opens the app they want to share. You tap your phones
+      together, back to back. That's it — the app jumps straight from their phone
+      to yours.
+    </p>
+    <p class="lede">
+      It opens like any other app, even with no signal. And now
+      <strong>you</strong> can pass it on to the next person.
+    </p>
+  </div>
+</section>
+
+<!-- ══ 2. PLAY ════════════════════════════════════════════════════ -->
 <section class="chapter chapter-play" id="play">
   <div class="chapter-copy reveal">
     <p class="kicker">Game night</p>
-    <h2>The TV is the screen.<br>Every phone is a controller.</h2>
+    <h2>Play together.<br>Right here.</h2>
     <p class="lede">
-      One friend has the game. Hold your phones together and you have it
-      too. Then the whole room plays — no Wi-Fi password, no sign-up,
-      no waiting for downloads.
+      Multiplayer games that run phone to phone — no internet, no servers,
+      just the people around you. One friend has the game; tap phones and
+      you have it too.
     </p>
+    <p class="lede">Got a TV around? It can be the big screen.</p>
   </div>
   <figure class="play-photo reveal">
     <img src="/img/wotformer.jpg" alt="A phone held sideways showing a game controller with a D-pad and A and B buttons, in front of a TV showing a retro platform game lobby" width="1205" height="1600" loading="lazy">
   </figure>
 </section>
 
-<!-- ══ 2. WHAT IS IT ══════════════════════════════════════════════ -->
+<!-- ══ 3. WHAT IS IT ══════════════════════════════════════════════ -->
 <section class="chapter chapter-what">
   <div class="chapter-copy center reveal">
     <p class="kicker">So what is Myco?</p>
@@ -206,13 +234,13 @@
     <p class="lede">
       Usually, apps come from a store on the internet. With Myco, they come
       from a person — a friend, a teacher, whoever is running the event.
-      They hold their phone to yours, and the app is on your phone too.
+      They tap their phone to yours, and the app is on your phone too.
     </p>
   </div>
   <ul class="perks">
     <li class="perk reveal">
       <span class="perk-mark" aria-hidden="true"></span>
-      <h3>No internet needed</h3>
+      <h3>No internet? No problem.</h3>
       <p>Phones talk to each other directly. Works in airplane mode.</p>
     </li>
     <li class="perk reveal">
@@ -226,29 +254,6 @@
       <p>Once you have an app, you can give it to the next person.</p>
     </li>
   </ul>
-</section>
-
-<!-- ══ 3. HOW IT WORKS ════════════════════════════════════════════
-     One bump does both: it connects the two phones AND hands the app
-     over. Don't split it into steps. -->
-<section class="chapter chapter-how" id="how">
-  <figure class="how-photo reveal">
-    <img src="/img/share-bump.jpg" alt="Two phones held back to back. One shows “Sharing Bitchat — hold the backs together, no scan needed”" width="768" height="1376" loading="lazy">
-  </figure>
-  <div class="chapter-copy reveal">
-    <p class="kicker">How it works</p>
-    <h2>One bump.<br>The app is yours.</h2>
-    <p class="lede">
-      Your friend opens the app they want to share. You hold your phones
-      back to back. That's it — the app jumps straight from their phone
-      to yours.
-    </p>
-    <p class="lede">
-      It opens like any other app, even with no signal. And now
-      <strong>you</strong> can pass it on to the next person.
-    </p>
-    <p class="aside">No bump? Scan the code on their screen instead.</p>
-  </div>
 </section>
 
 <!-- ══ 4. THE MESH ════════════════════════════════════════════════ -->
@@ -292,25 +297,7 @@
   </div>
 </section>
 
-<!-- ══ 6. GOOD TO KNOW ════════════════════════════════════════════ -->
-<section class="chapter chapter-know">
-  <div class="chapter-copy center reveal">
-    <p class="kicker">Good to know</p>
-    <h2>Before you start.</h2>
-  </div>
-  <dl class="know reveal">
-    <div><dt>Which phones?</dt>
-      <dd>Android phones with Android 10 or newer. Not on iPhone yet.</dd></div>
-    <div><dt>Keep it open</dt>
-      <dd>Have Myco on screen while you connect and share. A phone in a pocket can't be found.</dd></div>
-    <div><dt>The first download</dt>
-      <dd>Getting Myco itself needs internet once. After that, sharing works without it.</dd></div>
-    <div><dt>About the “VPN”</dt>
-      <dd>On first start Myco asks for Bluetooth, nearby devices, and a VPN. The VPN stays on your phone — Myco uses it to talk to other phones. It does not send your internet traffic anywhere.</dd></div>
-  </dl>
-</section>
-
-<!-- ══ 7. PICK YOUR WAY IN ════════════════════════════════════════ -->
+<!-- ══ 6. PICK YOUR WAY IN ════════════════════════════════════════ -->
 <section class="chapter chapter-ways">
   <div class="chapter-copy center reveal">
     <p class="kicker">Pick your way in</p>
@@ -319,7 +306,7 @@
   <div class="ways">
     <a class="way reveal" href="#get-end">
       <h3>Someone is handing me an app</h3>
-      <p>Install Myco, open it, and hold your phone to theirs.</p>
+      <p>Install Myco, open it, and tap your phone to theirs.</p>
       <span class="way-go">Get Myco →</span>
     </a>
     <a class="way reveal" href="#organize">
@@ -335,19 +322,23 @@
   </div>
 </section>
 
-<!-- ══ 8. ORGANIZE ════════════════════════════════════════════════ -->
+<!-- ══ 7. ORGANIZE ════════════════════════════════════════════════ -->
 <section class="chapter chapter-organize" id="organize">
   <div class="chapter-copy reveal">
     <p class="kicker">Organize a group</p>
-    <h2>Get a useful tool to everyone in the room.</h2>
+    <h2>Create a network where there is none.</h2>
     <p class="lede">
-      Say you run a half-day workshop in a hall with poor signal. The group
-      uses a shared checklist that everyone ticks off together. You hand it
-      to a few people; they hand it on. Each phone picks up the latest ticks
-      from the phones near it — even someone who walks in late.
+      A weekend in the mountains, a camp miles from the nearest mast. Before
+      the signal drops, put the group's tools on one phone — the route, the
+      packing list, a group chat — and tap them across to everyone. They
+      hand them on to whoever they meet.
     </p>
-    <p class="aside">Try it on two phones before the day. Add big apps in
-      advance — Bluetooth is slow for those.</p>
+    <p class="lede">
+      From then on the phones keep each other up to date. Tick something
+      off the list and the phones in reach pick it up — even the one that
+      catches up with the group later.
+    </p>
+    <p class="aside">* Myco is in early development, do not rely on it for personal safety.</p>
   </div>
   <div class="offline-table reveal">
     <div class="ot-col">
@@ -369,50 +360,44 @@
       </ul>
     </div>
   </div>
-  <p class="fine reveal">Myco is not an emergency radio: it doesn't promise a message gets
-    through, and it can't confirm a message came from an organizer.</p>
 </section>
 
-<!-- ══ 9. BUILD ═══════════════════════════════════════════════════ -->
+<!-- ══ 8. BUILD ═══════════════════════════════════════════════════ -->
 <section class="chapter chapter-build" id="build">
   <div class="chapter-copy reveal">
     <p class="kicker">Build for Myco</p>
-    <h2>Ship an app that travels by hand.</h2>
+    <h2>Build for the mesh.</h2>
     <p class="lede">
-      Myco runs <strong>napplets</strong> — small sandboxed web apps
-      (<a href="https://napplet.run">NIP-5D</a>) that ask for what they need
-      and get only what the person grants.
+      Myco runs <strong>napplets</strong>: small web apps in a sandbox.
+      Publish one to Nostr and people hand it on, phone to phone.
     </p>
   </div>
-  <div class="build-grid">
-    <ul class="caps reveal">
-      <li><b>Identity</b><span>a Nostr key to sign as — a guest key, the person's own, or Amber</span></li>
-      <li><b>Relays</b><span>this phone's own Nostr relay, and public ones when online</span></li>
-      <li><b>The mesh</b><span>publish to and read from nearby paired phones, up to a hop limit the person sets</span></li>
-      <li><b>Files</b><span>pictures and files by content hash — from this phone, a paired phone, or public servers</span></li>
-      <li><b>Other apps</b><span>other apps by role: “open this profile” opens the person's chosen profile app</span></li>
-    </ul>
-    <div class="build-notes reveal">
-      <h3>nsites, as a bonus</h3>
-      <p>Any <strong>nsite</strong> — a static website published on Nostr —
-        works offline once it's on the phone. No permissions, no mesh.</p>
-      <h3>How it travels</h3>
-      <p>Every phone runs its own Nostr relay and Blossom store on the
-        <strong>FIPS</strong> mesh, so any phone that has your app can serve
-        it to the next. Files are signed by you and fetched by hash.</p>
-      <h3>Sharing isn't syncing</h3>
-      <p>Myco copies your app's files, not its data. Want shared state?
-        Publish it over the mesh.</p>
-      <div class="build-links">
-        <a class="btn-ghost" href="https://github.com/Origami74/myco#build-apps-for-myco">Builder guide</a>
-        <a class="btn-ghost" href="https://napplet.run">napplet.run</a>
-        <a class="btn-ghost" href="https://github.com/Origami74/myco">Source on GitHub</a>
-      </div>
-    </div>
+  <ul class="perks">
+    <li class="perk reveal">
+      <span class="perk-mark" aria-hidden="true"></span>
+      <h3>Just the web</h3>
+      <p>HTML, CSS and JavaScript. Any nsite runs offline too.</p>
+    </li>
+    <li class="perk reveal">
+      <span class="perk-mark" aria-hidden="true"></span>
+      <h3>Talks to nearby phones</h3>
+      <p>Publish and read over the mesh. No server, no internet.</p>
+    </li>
+    <li class="perk reveal">
+      <span class="perk-mark" aria-hidden="true"></span>
+      <h3>Asks, never takes</h3>
+      <p>Identity, relays, mesh, files: your app gets what the person grants.</p>
+    </li>
+  </ul>
+  <div class="build-links reveal">
+    <a class="btn-ghost btn-ghost-lead" href="https://github.com/Origami74/myco#build-apps-for-myco">Builder guide</a>
+    <a class="btn-ghost" href="https://napplet.run">napplet.run</a>
+    <a class="btn-ghost" href="https://napplet.soy">napplet.soy</a>
+    <a class="btn-ghost" href="https://github.com/Origami74/myco">Source on GitHub</a>
   </div>
 </section>
 
-<!-- ══ 10. GET IT ═════════════════════════════════════════════════ -->
+<!-- ══ 9. GET IT ══════════════════════════════════════════════════ -->
 <section class="chapter chapter-end" id="get-end">
   <img class="end-mark reveal" src="/img/icon-256.png" alt="" width="96" height="96">
   <h2 class="reveal">Step into the mesh.</h2>
