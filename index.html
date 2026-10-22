@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Myco — your portal to the mesh</title>
+<meta name="description" content="Get apps from the people around you. Bump phones, and the app is yours too — and it keeps working with no internet. Free for Android.">
+<meta name="theme-color" content="#060a12">
+<link rel="canonical" href="https://getmyco.app/">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/img/icon-256.png">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://getmyco.app/">
+<meta property="og:title" content="Myco — your portal to the mesh">
+<meta property="og:description" content="Get apps from the people around you. Bump phones, and it keeps working with no internet.">
+<meta property="og:image" content="https://getmyco.app/img/mesh-park.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+
+<svg class="mycelium" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true"></svg>
+<div class="spores" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a class="brand" href="#top" aria-label="Myco home">
+    <img src="/img/icon-256.png" alt="" width="28" height="28">
+    <span>Myco</span>
+  </a>
+  <nav class="topnav">
+    <a href="#how">How it works</a>
+    <a href="#build">For builders</a>
+    <a class="topnav-get" href="#get">Get Myco</a>
+  </nav>
+</header>
+
+<main id="top">
+
+<!-- ══ HERO ═══════════════════════════════════════════════════════
+     The phone keeps the real app intro: everything inside .screen is
+     what runs in the Android app. Tap it to dive through the pupil. -->
+<section class="stage">
+
+  <div class="pitch">
+    <p class="eyebrow"><span class="eyebrow-dot"></span>Free for Android phones</p>
+
+    <h1 class="wordmark" aria-label="Myco">
+      <span class="wm-letter" aria-hidden="true">M</span><span class="wm-letter" aria-hidden="true">y</span><span class="wm-letter" aria-hidden="true">c</span><span class="wm-letter" aria-hidden="true">o</span>
+    </h1>
+
+    <p class="tagline">Your portal to the mesh.</p>
+
+    <p class="blurb">
+      Get apps from the people around you. Hold your phones together and
+      the app is yours too — and it keeps working when there's no internet.
+    </p>
+
+    <div class="get hero-get" id="get">
+      <div class="get-buttons">
+        <a class="btn-store" href="https://zapstore.dev/apps/app.myco" data-zapstore>
+          <svg class="btn-icon" viewBox="0 0 19 32" aria-hidden="true"><path fill="currentColor" d="M18.84 13.97 8.85.36c-.55-.75-1.75-.23-1.55.66l1.75 7.92a.85.85 0 0 1-.85 1.02l-7.33-.05a.85.85 0 0 0-.74 1.28l7.57 12.14c.3.48.04 1.11-.53 1.25l-1.76.43c-.7.17-.89 1.07-.3 1.49l7.35 5.33c.5.36 1.21.11 1.36-.48l2.03-8.34a.85.85 0 0 0-1.17-.97l-1.61.66a.85.85 0 0 1-1.18-.62l-1.14-5.57a.85.85 0 0 1 .82-1l6.6-.22c.69-.02 1.07-.78.67-1.33Z"/></svg>
+          <span class="btn-text"><small>Get it on</small>Zapstore</span>
+        </a>
+        <a class="btn-direct" href="https://zapstore.dev/apps/app.myco" data-download>
+          <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg>
+          <span class="btn-text"><small>No store needed</small>Download Myco</span>
+        </a>
+      </div>
+      <p class="get-meta" data-release-meta>Free · Android 10 or newer</p>
+      <details class="howto">
+        <summary>Which one should I pick?</summary>
+        <p><strong>Zapstore</strong> is an app store that keeps Myco up to
+          date for you. Good if you'll use Myco often.</p>
+        <p><strong>Download Myco</strong> puts the app straight on your phone.
+          After it downloads:</p>
+        <ol>
+          <li>Tap the download when it finishes (or find it in <em>Files › Downloads</em>).</li>
+          <li>If your phone asks, allow your browser to install apps. It's a one-time switch.</li>
+          <li>Tap <em>Install</em>, then <em>Open</em>.</li>
+        </ol>
+      </details>
+      <p class="not-android" hidden>
+        You're on a computer. Open <strong>getmyco.app</strong> on your Android phone to install.
+      </p>
+    </div>
+  </div>
+
+  <div class="phone-wrap">
+    <div class="phone">
+      <div class="phone-glow"></div>
+      <div class="phone-body">
+        <div class="island"></div>
+
+        <div class="screen" role="button" tabindex="0" aria-label="Play the Myco intro">
+
+          <!-- ═══ THE INTRO ═══════════════════════════════════════
+               The mark is generated in src/intro.js: ONE quadrant of
+               branching hyphae, cloned three times with <use> at
+               90/180/270°. That's where the logo's fourfold
+               symmetry comes from — and it means the timeline only
+               animates a quarter of the paths.
+               ═══════════════════════════════════════════════════ -->
+          <div class="scr scr-intro">
+            <svg class="logo-net" viewBox="0 0 400 400" aria-hidden="true">
+              <defs>
+                <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+                  <feGaussianBlur stdDeviation="3.2" result="b"/>
+                  <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+                </filter>
+                <radialGradient id="coreGrad">
+                  <stop offset="0%"   stop-color="#ffffff"/>
+                  <stop offset="40%"  stop-color="#67e8f9"/>
+                  <stop offset="100%" stop-color="#0e7490"/>
+                </radialGradient>
+
+                <!-- The pupil. A hole punched out of the filaments —
+                     only `r` is animated. This is geometric, so a
+                     filament that bows inward mid-curve gets cut too;
+                     working from each filament's endpoints instead left
+                     little beads of exactly those curves in the black. -->
+                <mask id="pupil" maskUnits="userSpaceOnUse"
+                      x="-400" y="-400" width="1200" height="1200">
+                  <!-- outer bound: filaments stop at the ring rather than
+                       straggling past it. Same radius as .ring below, so
+                       they end on its line. -->
+                  <circle class="iris-bound" cx="200" cy="200" r="176" fill="#fff"/>
+                  <circle class="pupil-hole"  cx="200" cy="200" r="0" fill="#000"/>
+                </mask>
+              </defs>
+
+              <!-- quadrant + its three rotated clones are injected here.
+                   On tap these same filaments get eaten from the inside
+                   as the pupil opens. Nothing else is drawn. -->
+              <g class="net-wrap" filter="url(#glow)" mask="url(#pupil)"></g>
+
+              <!-- the pupil's edge. Radius and fade are driven from
+                   drawPupil() so it always sits exactly on the cut. -->
+              <circle class="pupil-rim" cx="200" cy="200" r="0"
+                      fill="none" stroke="#67e8f9" stroke-width="1.2"
+                      opacity="0" filter="url(#glow)"/>
+
+              <!-- the mark's outer ring -->
+              <circle class="ring" cx="200" cy="200" r="176"
+                      fill="none" stroke="#22d3ee" stroke-width="2.5"
+                      pathLength="1" filter="url(#glow)"/>
+
+              <circle class="core" cx="200" cy="200" r="10"
+                      fill="url(#coreGrad)" filter="url(#glow)"/>
+            </svg>
+
+            <!-- Idle prompt. Hidden until the mark has finished growing.
+                 A tendril grows out of the mark, then the words come up
+                 on it. -->
+            <div class="tap-prompt">
+              <svg class="tap-vine" viewBox="0 0 200 54" aria-hidden="true"></svg>
+              <p class="tap-words" data-text="tap to start"></p>
+            </div>
+          </div>
+
+          <!-- the far side of the pupil: the app itself (site only — the
+               Android app opens its real UI here) -->
+          <div class="scr scr-app" aria-hidden="true">
+            <img src="/img/scr-circle.jpg" alt="" loading="lazy">
+          </div>
+
+        </div>
+      </div>
+      <div class="phone-shadow"></div>
+    </div>
+  </div>
+
+  <a class="scroll-cue" href="#play" aria-label="Scroll to learn more">
+    <span>See what it does</span>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="m6 9 6 6 6-6"/></svg>
+  </a>
+</section>
+
+<!-- ══ 1. PLAY ════════════════════════════════════════════════════ -->
+<section class="chapter chapter-play" id="play">
+  <div class="chapter-copy reveal">
+    <p class="kicker">Game night</p>
+    <h2>The TV is the screen.<br>Every phone is a controller.</h2>
+    <p class="lede">
+      One friend has the game. Hold your phones together and you have it
+      too. Then the whole room plays — no Wi-Fi password, no sign-up,
+      no waiting for downloads.
+    </p>
+  </div>
+  <figure class="play-photo reveal">
+    <img src="/img/wotformer.jpg" alt="A phone held sideways showing a game controller with a D-pad and A and B buttons, in front of a TV showing a retro platform game lobby" width="1205" height="1600" loading="lazy">
+  </figure>
+</section>
+
+<!-- ══ 2. WHAT IS IT ══════════════════════════════════════════════ -->
+<section class="chapter chapter-what">
+  <div class="chapter-copy center reveal">
+    <p class="kicker">So what is Myco?</p>
+    <h2>Apps from the people next to you.</h2>
+    <p class="lede">
+      Usually, apps come from a store on the internet. With Myco, they come
+      from a person — a friend, a teacher, whoever is running the event.
+      They hold their phone to yours, and the app is on your phone too.
+    </p>
+  </div>
+  <ul class="perks">
+    <li class="perk reveal">
+      <span class="perk-mark" aria-hidden="true"></span>
+      <h3>No internet needed</h3>
+      <p>Phones talk to each other directly. Works in airplane mode.</p>
+    </li>
+    <li class="perk reveal">
+      <span class="perk-mark" aria-hidden="true"></span>
+      <h3>Nothing to sign up for</h3>
+      <p>No account, no email, no password. Open it and go.</p>
+    </li>
+    <li class="perk reveal">
+      <span class="perk-mark" aria-hidden="true"></span>
+      <h3>Pass it on</h3>
+      <p>Once you have an app, you can give it to the next person.</p>
+    </li>
+  </ul>
+</section>
+
+<!-- ══ 3. HOW IT WORKS ════════════════════════════════════════════
+     One bump does both: it connects the two phones AND hands the app
+     over. Don't split it into steps. -->
+<section class="chapter chapter-how" id="how">
+  <figure class="how-photo reveal">
+    <img src="/img/share-bump.jpg" alt="Two phones held back to back. One shows “Sharing Bitchat — hold the backs together, no scan needed”" width="768" height="1376" loading="lazy">
+  </figure>
+  <div class="chapter-copy reveal">
+    <p class="kicker">How it works</p>
+    <h2>One bump.<br>The app is yours.</h2>
+    <p class="lede">
+      Your friend opens the app they want to share. You hold your phones
+      back to back. That's it — the app jumps straight from their phone
+      to yours.
+    </p>
+    <p class="lede">
+      It opens like any other app, even with no signal. And now
+      <strong>you</strong> can pass it on to the next person.
+    </p>
+    <p class="aside">No bump? Scan the code on their screen instead.</p>
+  </div>
+</section>
+
+<!-- ══ 4. THE MESH ════════════════════════════════════════════════ -->
+<section class="chapter chapter-mesh">
+  <div class="mesh-photo" aria-hidden="true">
+    <img src="/img/mesh-park.jpg" alt="" loading="lazy">
+  </div>
+  <div class="mesh-copy reveal">
+    <p class="kicker">The mesh</p>
+    <h2>Works where the internet doesn't.</h2>
+    <p class="lede">
+      In a park, on a festival field, in a basement hall, at a school with
+      bad Wi-Fi. Phones close to each other link up directly and become a
+      little network of their own — the <strong>mesh</strong>. Myco is your
+      way into it.
+    </p>
+    <ul class="chips" aria-label="Ways phones connect">
+      <li>Bluetooth</li><li>Wi-Fi Aware</li><li>Same Wi-Fi network</li><li>USB cable</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ══ 5. FEELS LIKE AN APP ═══════════════════════════════════════ -->
+<section class="chapter chapter-feel">
+  <div class="feel-devices reveal">
+    <div class="device"><img src="/img/scr-bitchat.jpg" alt="A chat app open full-screen, with messages sent over Bluetooth" width="630" height="1400" loading="lazy"></div>
+    <div class="device device-back"><img src="/img/scr-home.jpg" alt="An Android home screen with the Myco and Bitchat app icons" width="630" height="1400" loading="lazy"></div>
+  </div>
+  <div class="chapter-copy reveal">
+    <p class="kicker">Yours to keep</p>
+    <h2>Feels like any other app.</h2>
+    <p class="lede">
+      Apps open full screen, and you can put them on your home screen.
+      Chat with the people around you, tick off a shared checklist, play a
+      game — all without a single bar of signal.
+    </p>
+    <p class="lede">
+      And each app only gets what you allow: who you are, or talking to the
+      phones nearby. You decide.
+    </p>
+  </div>
+</section>
+
+<!-- ══ 6. GOOD TO KNOW ════════════════════════════════════════════ -->
+<section class="chapter chapter-know">
+  <div class="chapter-copy center reveal">
+    <p class="kicker">Good to know</p>
+    <h2>Before you start.</h2>
+  </div>
+  <dl class="know reveal">
+    <div><dt>Which phones?</dt>
+      <dd>Android phones with Android 10 or newer. Not on iPhone yet.</dd></div>
+    <div><dt>Keep it open</dt>
+      <dd>Have Myco on screen while you connect and share. A phone in a pocket can't be found.</dd></div>
+    <div><dt>The first download</dt>
+      <dd>Getting Myco itself needs internet once. After that, sharing works without it.</dd></div>
+    <div><dt>About the “VPN”</dt>
+      <dd>On first start Myco asks for Bluetooth, nearby devices, and a VPN. The VPN stays on your phone — Myco uses it to talk to other phones. It does not send your internet traffic anywhere.</dd></div>
+  </dl>
+</section>
+
+<!-- ══ 7. PICK YOUR WAY IN ════════════════════════════════════════ -->
+<section class="chapter chapter-ways">
+  <div class="chapter-copy center reveal">
+    <p class="kicker">Pick your way in</p>
+    <h2>Where are you coming from?</h2>
+  </div>
+  <div class="ways">
+    <a class="way reveal" href="#get-end">
+      <h3>Someone is handing me an app</h3>
+      <p>Install Myco, open it, and hold your phone to theirs.</p>
+      <span class="way-go">Get Myco →</span>
+    </a>
+    <a class="way reveal" href="#organize">
+      <h3>I want to get an app to my group</h3>
+      <p>A workshop, a camp, a club — what to set up, and what keeps working offline.</p>
+      <span class="way-go">Organize a group →</span>
+    </a>
+    <a class="way reveal" href="#build">
+      <h3>I build apps</h3>
+      <p>What to build, what it can use, and how it travels phone to phone.</p>
+      <span class="way-go">Build for Myco →</span>
+    </a>
+  </div>
+</section>
+
+<!-- ══ 8. ORGANIZE ════════════════════════════════════════════════ -->
+<section class="chapter chapter-organize" id="organize">
+  <div class="chapter-copy reveal">
+    <p class="kicker">Organize a group</p>
+    <h2>Get a useful tool to everyone in the room.</h2>
+    <p class="lede">
+      Say you run a half-day workshop in a hall with poor signal. The group
+      uses a shared checklist that everyone ticks off together. You hand it
+      to a few people; they hand it on. Each phone picks up the latest ticks
+      from the phones near it — even someone who walks in late.
+    </p>
+    <p class="aside">Try it on two phones before the day. Add big apps in
+      advance — Bluetooth is slow for those.</p>
+  </div>
+  <div class="offline-table reveal">
+    <div class="ot-col">
+      <h3>Works with no internet</h3>
+      <ul>
+        <li>Connecting, while both phones have Myco open</li>
+        <li>Handing an app to someone you're connected to</li>
+        <li>Opening any app already on your phone</li>
+        <li>Apps built to talk to nearby phones, while they're in reach</li>
+      </ul>
+    </div>
+    <div class="ot-col ot-needs">
+      <h3>Needs the internet</h3>
+      <ul>
+        <li>Installing Myco itself</li>
+        <li>Adding an app nobody here has yet</li>
+        <li>Public Nostr content, like profiles and the AppStore feed</li>
+        <li>Anything an app loads from the web</li>
+      </ul>
+    </div>
+  </div>
+  <p class="fine reveal">Myco is not an emergency radio: it doesn't promise a message gets
+    through, and it can't confirm a message came from an organizer.</p>
+</section>
+
+<!-- ══ 9. BUILD ═══════════════════════════════════════════════════ -->
+<section class="chapter chapter-build" id="build">
+  <div class="chapter-copy reveal">
+    <p class="kicker">Build for Myco</p>
+    <h2>Ship an app that travels by hand.</h2>
+    <p class="lede">
+      Myco runs <strong>napplets</strong> — small sandboxed web apps
+      (<a href="https://napplet.run">NIP-5D</a>) that ask for what they need
+      and get only what the person grants.
+    </p>
+  </div>
+  <div class="build-grid">
+    <ul class="caps reveal">
+      <li><b>Identity</b><span>a Nostr key to sign as — a guest key, the person's own, or Amber</span></li>
+      <li><b>Relays</b><span>this phone's own Nostr relay, and public ones when online</span></li>
+      <li><b>The mesh</b><span>publish to and read from nearby paired phones, up to a hop limit the person sets</span></li>
+      <li><b>Files</b><span>pictures and files by content hash — from this phone, a paired phone, or public servers</span></li>
+      <li><b>Other apps</b><span>other apps by role: “open this profile” opens the person's chosen profile app</span></li>
+    </ul>
+    <div class="build-notes reveal">
+      <h3>nsites, as a bonus</h3>
+      <p>Any <strong>nsite</strong> — a static website published on Nostr —
+        works offline once it's on the phone. No permissions, no mesh.</p>
+      <h3>How it travels</h3>
+      <p>Every phone runs its own Nostr relay and Blossom store on the
+        <strong>FIPS</strong> mesh, so any phone that has your app can serve
+        it to the next. Files are signed by you and fetched by hash.</p>
+      <h3>Sharing isn't syncing</h3>
+      <p>Myco copies your app's files, not its data. Want shared state?
+        Publish it over the mesh.</p>
+      <div class="build-links">
+        <a class="btn-ghost" href="https://github.com/Origami74/myco#build-apps-for-myco">Builder guide</a>
+        <a class="btn-ghost" href="https://napplet.run">napplet.run</a>
+        <a class="btn-ghost" href="https://github.com/Origami74/myco">Source on GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 10. GET IT ═════════════════════════════════════════════════ -->
+<section class="chapter chapter-end" id="get-end">
+  <img class="end-mark reveal" src="/img/icon-256.png" alt="" width="96" height="96">
+  <h2 class="reveal">Step into the mesh.</h2>
+  <p class="lede reveal">Free, open source, and no account needed.</p>
+  <div class="get reveal">
+    <div class="get-buttons">
+      <a class="btn-store" href="https://zapstore.dev/apps/app.myco" data-zapstore>
+        <svg class="btn-icon" viewBox="0 0 19 32" aria-hidden="true"><path fill="currentColor" d="M18.84 13.97 8.85.36c-.55-.75-1.75-.23-1.55.66l1.75 7.92a.85.85 0 0 1-.85 1.02l-7.33-.05a.85.85 0 0 0-.74 1.28l7.57 12.14c.3.48.04 1.11-.53 1.25l-1.76.43c-.7.17-.89 1.07-.3 1.49l7.35 5.33c.5.36 1.21.11 1.36-.48l2.03-8.34a.85.85 0 0 0-1.17-.97l-1.61.66a.85.85 0 0 1-1.18-.62l-1.14-5.57a.85.85 0 0 1 .82-1l6.6-.22c.69-.02 1.07-.78.67-1.33Z"/></svg>
+        <span class="btn-text"><small>Get it on</small>Zapstore</span>
+      </a>
+      <a class="btn-direct" href="https://zapstore.dev/apps/app.myco" data-download>
+        <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg>
+        <span class="btn-text"><small>No store needed</small>Download Myco</span>
+      </a>
+    </div>
+    <p class="get-meta" data-release-meta>Free · Android 10 or newer</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>Myco is open source (MIT). Built on the FIPS mesh, with Nostr and Blossom.</p>
+  <nav>
+    <a href="https://github.com/Origami74/myco">GitHub</a>
+    <a href="https://zapstore.dev/apps/app.myco">Zapstore</a>
+    <a href="https://github.com/Origami74/myco/releases">All releases</a>
+  </nav>
+</footer>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>

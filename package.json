@@ -1,0 +1,20 @@
+{
+  "name": "getmyco-site",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview --host"
+  },
+  "dependencies": {
+    "applesauce-core": "^7.0.3",
+    "applesauce-relay": "^7.0.0",
+    "gsap": "^3.15.0",
+    "rxjs": "^7.8.2"
+  },
+  "devDependencies": {
+    "vite": "^8.3.5"
+  }
+}
